@@ -1,0 +1,1104 @@
+D:\WEBSITE\Venue Booking\Frontend
+D:\WEBSITE\Venue Booking\Frontend\css
+D:\WEBSITE\Venue Booking\Frontend\css\style.css
+D:\WEBSITE\Venue Booking\Frontend\Halls
+D:\WEBSITE\Venue Booking\Frontend\Halls\A Con_Hall.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Block Conference Hall Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Patrician Hall Booking System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="text-center py-5">
+        <h1>A-Block Conference Hall</h1>
+        <p>A spacious conference hall located on the 1st floor of A-Block.</p>
+    </header>
+
+    <section id="booking" class="py-5">
+        <div class="container form-container">
+            <h2 class="section-title text-center">Booking Form</h2>
+            <form id="bookingForm" action="submit_booking.php" method="POST" onsubmit="return validateForm()">
+                <input type="hidden" name="hallName" value="A-Block Conference Hall">
+                <div class="form-group">
+                    <label for="name">Your Name <span class="text-muted">(e.g., John Doe)</span></label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your full name">
+                    <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="text-muted">(e.g., john.doe@example.com)</span></label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email address">
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date <span class="text-muted">(Select a date)</span></label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                    <div class="invalid-feedback">Please select a date.</div>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time <span class="text-muted">(Select a time)</span></label>
+                    <input type="time" class="form-control" id="time" name="time" required>
+                    <div class="invalid-feedback">Please select a time.</div>
+                </div>
+                <button type="submit" class="btn btn-custom">Submit Booking</button>
+            </form>
+        </div>
+    </section>
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Patrician College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+D:\WEBSITE\Venue Booking\Frontend\Halls\B AUDI.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Block Conference Hall Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Patrician Hall Booking System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="text-center py-5">
+        <h1>A-Block Conference Hall</h1>
+        <p>A spacious conference hall located on the 1st floor of A-Block.</p>
+    </header>
+
+    <section id="booking" class="py-5">
+        <div class="container form-container">
+            <h2 class="section-title text-center">Booking Form</h2>
+            <form id="bookingForm" action="submit_booking.php" method="POST" onsubmit="return validateForm()">
+                <input type="hidden" name="hallName" value="A-Block Conference Hall">
+                <div class="form-group">
+                    <label for="name">Your Name <span class="text-muted">(e.g., John Doe)</span></label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your full name">
+                    <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="text-muted">(e.g., john.doe@example.com)</span></label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email address">
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date <span class="text-muted">(Select a date)</span></label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                    <div class="invalid-feedback">Please select a date.</div>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time <span class="text-muted">(Select a time)</span></label>
+                    <input type="time" class="form-control" id="time" name="time" required>
+                    <div class="invalid-feedback">Please select a time.</div>
+                </div>
+                <button type="submit" class="btn btn-custom">Submit Booking</button>
+            </form>
+        </div>
+    </section>
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Patrician College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+D:\WEBSITE\Venue Booking\Frontend\Halls\B OAT.html<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Block OAT Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Patrician Hall Booking System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="text-center py-5">
+        <h1>B-Block OAT</h1>
+        <p>An open-air theater located on the ground floor of B-Block.</p>
+    </header>
+
+    <section id="booking" class="py-5">
+        <div class="container form-container">
+            <h2 class="section-title text-center">Booking Form</h2>
+            <form id="bookingForm" action="submit_booking.php" method="POST" onsubmit="return validateForm()">
+                <input type="hidden" name="hallName" value="B-Block OAT">
+                <div class="form-group">
+                    <label for="name">Your Name <span class="text-muted">(e.g., John Doe)</span></label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your full name">
+                    <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="text-muted">(e.g., john.doe@example.com)</span></label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email address">
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date <span class="text-muted">(Select a date)</span></label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                    <div class="invalid-feedback">Please select a date.</div>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time <span class="text-muted">(Select a time)</span></label>
+                    <input type="time" class="form-control" id="time" name="time" required>
+                    <div class="invalid-feedback">Please select a time.</div>
+                </div>
+                <button type="submit" class="btn btn-custom">Submit Booking</button>
+            </form>
+        </div>
+    </section>
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Patrician College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+D:\WEBSITE\Venue Booking\Frontend\Halls\BMS_Hall.html<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMS Hall Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Patrician Hall Booking System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="text-center py-5">
+        <h1>BMS Hall</h1>
+        <p>A dedicated hall for business and management studies events.</p>
+    </header>
+
+    <section id="booking" class="py-5">
+        <div class="container form-container">
+            <h2 class="section-title text-center">Booking Form</h2>
+            <form id="bookingForm" action="submit_booking.php" method="POST" onsubmit="return validateForm()">
+                <input type="hidden" name="hallName" value="BMS Hall">
+                <div class="form-group">
+                    <label for="name">Your Name <span class="text-muted">(e.g., John Doe)</span></label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your full name">
+                    <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="text-muted">(e.g., john.doe@example.com)</span></label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email address">
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date <span class="text-muted">(Select a date)</span></label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                    <div class="invalid-feedback">Please select a date.</div>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time <span class="text-muted">(Select a time)</span></label>
+                    <input type="time" class="form-control" id="time" name="time" required>
+                    <div class="invalid-feedback">Please select a time.</div>
+                </div>
+                <button type="submit" class="btn btn-custom">Submit Booking</button>
+            </form>
+        </div>
+    </section>
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Patrician College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+D:\WEBSITE\Venue Booking\Frontend\Halls\Board_Room.html<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Room Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Patrician Hall Booking System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="text-center py-5">
+        <h1>Board Room</h1>
+        <p>A formal setting for meetings and discussions.</p>
+    </header>
+
+    <section id="booking" class="py-5">
+        <div class="container form-container">
+            <h2 class="section-title text-center">Booking Form</h2>
+            <form id="bookingForm" action="submit_booking.php" method="POST" onsubmit="return validateForm()">
+                <input type="hidden" name="hallName" value="Board Room">
+                <div class="form-group">
+                    <label for="name">Your Name <span class="text-muted">(e.g., John Doe)</span></label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your full name">
+                    <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="text-muted">(e.g., john.doe@example.com)</span></label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email address">
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date <span class="text-muted">(Select a date)</span></label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                    <div class="invalid-feedback">Please select a date.</div>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time <span class="text-muted">(Select a time)</span></label>
+                    <input type="time" class="form-control" id="time" name="time" required>
+                    <div class="invalid-feedback">Please select a time.</div>
+                </div>
+                <button type="submit" class="btn btn-custom">Submit Booking</button>
+            </form>
+        </div>
+    </section>
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Patrician College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+D:\WEBSITE\Venue Booking\Frontend\Halls\C Con_Hall.html <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Block Conference Hall Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Patrician Hall Booking System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="text-center py-5">
+        <h1>C Block Conference Hall</h1>
+        <p>A professional conference hall equipped for various events, located on the ground floor of C Block.</p>
+    </header>
+
+    <section id="booking" class="py-5">
+        <div class="container form-container">
+            <h2 class="section-title text-center">Booking Form</h2>
+            <form id="bookingForm" action="submit_booking.php" method="POST" onsubmit="return validateForm()">
+                <input type="hidden" name="hallName" value="C Block Conference Hall">
+                <div class="form-group">
+                    <label for="name">Your Name <span class="text-muted">(e.g., John Doe)</span></label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your full name">
+                    <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="text-muted">(e.g., john.doe@example.com)</span></label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email address">
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date <span class="text-muted">(Select a date)</span></label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                    <div class="invalid-feedback">Please select a date.</div>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time <span class="text-muted">(Select a time)</span></label>
+                    <input type="time" class="form-control" id="time" name="time" required>
+                    <div class="invalid-feedback">Please select a time.</div>
+                </div>
+                <button type="submit" class="btn btn-custom">Submit Booking</button>
+            </form>
+        </div>
+    </section>
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Patrician College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+D:\WEBSITE\Venue Booking\Frontend\Halls\C FINTON_Hall.html <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Block Fintan Hall Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Patrician Hall Booking System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="text-center py-5">
+        <h1>C Block Fintan Hall</h1>
+        <p>A versatile hall located on the ground floor of C Block.</p>
+    </header>
+
+    <section id="booking" class="py-5">
+        <div class="container form-container">
+            <h2 class="section-title text-center">Booking Form</h2>
+            <form id="bookingForm" action="submit_booking.php" method="POST" onsubmit="return validateForm()">
+                <input type="hidden" name="hallName" value="C Block Fintan Hall">
+                <div class="form-group">
+                    <label for="name">Your Name <span class="text-muted">(e.g., John Doe)</span></label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your full name">
+                    <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="text-muted">(e.g., john.doe@example.com)</span></label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email address">
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date <span class="text-muted">(Select a date)</span></label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                    <div class="invalid-feedback">Please select a date.</div>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time <span class="text-muted">(Select a time)</span></label>
+                    <input type="time" class="form-control" id="time" name="time" required>
+                    <div class="invalid-feedback">Please select a time.</div>
+                </div>
+                <button type="submit" class="btn btn-custom">Submit Booking</button>
+            </form>
+        </div>
+    </section>
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Patrician College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+D:\WEBSITE\Venue Booking\Frontend\Halls\Comp_Lab.html<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Lab Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Patrician Hall Booking System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="text-center py-5">
+        <h1>Computer Lab</h1>
+        <p>Equipped with modern technology for practical sessions.</p>
+    </header>
+
+    <section id="booking" class="py-5">
+        <div class="container form-container">
+            <h2 class="section-title text-center">Booking Form</h2>
+            <form id="bookingForm" action="submit_booking.php" method="POST" onsubmit="return validateForm()">
+                <input type="hidden" name="hallName" value="Computer Lab">
+                <div class="form-group">
+                    <label for="name">Your Name <span class="text-muted">(e.g., John Doe)</span></label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your full name">
+                    <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="text-muted">(e.g., john.doe@example.com)</span></label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email address">
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date <span class="text-muted">(Select a date)</span></label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                    <div class="invalid-feedback">Please select a date.</div>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time <span class="text-muted">(Select a time)</span></label>
+                    <input type="time" class="form-control" id="time" name="time" required>
+                    <div class="invalid-feedback">Please select a time.</div>
+                </div>
+                <button type="submit" class="btn btn-custom">Submit Booking</button>
+            </form>
+        </div>
+    </section>
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Patrician College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+D:\WEBSITE\Venue Booking\Frontend\Halls\Delany_Hall.html <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delany Hall Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Patrician Hall Booking System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="text-center py-5">
+        <h1>Delany Hall</h1>
+        <p>A versatile space suitable for workshops and seminars.</p>
+    </header>
+
+    <section id="booking" class="py-5">
+        <div class="container form-container">
+            <h2 class="section-title text-center">Booking Form</h2>
+            <form id="bookingForm" action="submit_booking.php" method="POST" onsubmit="return validateForm()">
+                <input type="hidden" name="hallName" value="Delany Hall">
+                <div class="form-group">
+                    <label for="name">Your Name <span class="text-muted">(e.g., John Doe)</span></label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your full name">
+                    <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="text-muted">(e.g., john.doe@example.com)</span></label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email address">
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date <span class="text-muted">(Select a date)</span></label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                    <div class="invalid-feedback">Please select a date.</div>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time <span class="text-muted">(Select a time)</span></label>
+                    <input type="time" class="form-control" id="time" name="time" required>
+                    <div class="invalid-feedback">Please select a time.</div>
+                </div>
+                <button type="submit" class="btn btn-custom">Submit Booking</button>
+            </form>
+        </div>
+    </section>
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Patrician College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+D:\WEBSITE\Venue Booking\Frontend\Halls\Hall12.html
+D:\WEBSITE\Venue Booking\Frontend\Halls\Lib_Ref_Hall.html <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Reference Hall Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Patrician Hall Booking System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="text-center py-5">
+        <h1>Library Reference Hall</h1>
+        <p>A quiet space for study and research activities.</p>
+    </header>
+
+    <section id="booking" class="py-5">
+        <div class="container form-container">
+            <h2 class="section-title text-center">Booking Form</h2>
+            <form id="bookingForm" action="submit_booking.php" method="POST" onsubmit="return validateForm()">
+                <input type="hidden" name="hallName" value="Library Reference Hall">
+                <div class="form-group">
+                    <label for="name">Your Name <span class="text-muted">(e.g., John Doe)</span></label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your full name">
+                    <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="text-muted">(e.g., john.doe@example.com)</span></label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email address">
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date <span class="text-muted">(Select a date)</span></label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                    <div class="invalid-feedback">Please select a date.</div>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time <span class="text-muted">(Select a time)</span></label>
+                    <input type="time" class="form-control" id="time" name="time" required>
+                    <div class="invalid-feedback">Please select a time.</div>
+                </div>
+                <button type="submit" class="btn btn-custom">Submit Booking</button>
+            </form>
+        </div>
+    </section>
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Patrician College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+D:\WEBSITE\Venue Booking\Frontend\Halls\Stu_Cafe.html <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Cafeteria Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Patrician Hall Booking System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="text-center py-5">
+        <h1>Student Cafeteria</h1>
+        <p>A casual space for students to relax and enjoy meals.</p>
+    </header>
+
+    <section id="booking" class="py-5">
+        <div class="container form-container">
+            <h2 class="section-title text-center">Booking Form</h2>
+            <form id="bookingForm" action="submit_booking.php" method="POST" onsubmit="return validateForm()">
+                <input type="hidden" name="hallName" value="Student Cafeteria">
+                <div class="form-group">
+                    <label for="name">Your Name <span class="text-muted">(e.g., John Doe)</span></label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your full name">
+                    <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="text-muted">(e.g., john.doe@example.com)</span></label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email address">
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date <span class="text-muted">(Select a date)</span></label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                    <div class="invalid-feedback">Please select a date.</div>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time <span class="text-muted">(Select a time)</span></label>
+                    <input type="time" class="form-control" id="time" name="time" required>
+                    <div class="invalid-feedback">Please select a time.</div>
+                </div>
+                <button type="submit" class="btn btn-custom">Submit Booking</button>
+            </form>
+        </div>
+    </section>
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Patrician College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+D:\WEBSITE\Venue Booking\Frontend\img
+D:\WEBSITE\Venue Booking\Frontend\img\Patics Logo.png
+D:\WEBSITE\Venue Booking\Frontend\Index.html  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrician Hall Booking Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+
+        /* Custom Navbar Styles */
+        .navbar {
+            background-color: #343a40; /* Dark background */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem; /* Larger brand text */
+            font-weight: bold; /* Bold brand text */
+            color: #007bff; /* Brand color */
+            transition: color 0.3s; /* Smooth transition for brand */
+        }
+
+        .navbar-brand:hover {
+            color: #0056b3; /* Darker color on hover */
+        }
+
+        .nav-link {
+            color: #ffffff; /* White text color for links */
+            font-size: 1.1rem; /* Slightly larger font size */
+            margin-left: 15px; /* Spacing between links */
+            transition: color 0.3s; /* Smooth transition for links */
+        }
+
+        .nav-link:hover {
+            color: #007bff; /* Brand color on hover */
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+            border-bottom: 3px solid #007bff; /* Blue bottom border */
+            animation: fadeIn 1s ease-in-out; /* Header animation */
+        }
+
+        .logo img {
+            width: 100px; /* Small logo size */
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            color: #007bff; /* Title color */
+            margin-bottom: 30px;
+            font-size: 2rem;
+            text-transform: uppercase; /* Uppercase titles */
+            font-weight: bold;
+            border-bottom: 2px solid #007bff; /* Underline effect */
+            padding-bottom: 10px; /* Space under title */
+            animation: fadeIn 1.5s ease-in-out; /* Title animation */
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            opacity: 0; /* Start hidden for animation */
+            transform: translateY(20px); /* Start below */
+            animation: slideIn 0.5s forwards; /* Card slide-in animation */
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+        }
+
+        .card-img-top {
+            height: 200px; /* Set a fixed height for images */
+            object-fit: cover; /* Cover to maintain aspect ratio */
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 15px 0;
+            font-size: 0.9rem; /* Smaller footer text */
+            animation: fadeIn 2s ease-in-out; /* Footer animation */
+        }
+
+        footer a {
+            color: white; /* Ensure footer links are white */
+        }
+
+        .btn-custom {
+            background-color: #007bff; /* Custom background color */
+            color: white; /* Custom text color */
+            border: 2px solid transparent; /* Transparent border */
+            padding: 10px 20px; /* Padding for the button */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 1.1rem; /* Font size */
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s; /* Smooth transitions */
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3; /* Darker background on hover */
+            color: #fff; /* Keep text white on hover */
+            border-color: #0056b3; /* Border color on hover */
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        .btn-custom:focus {
+            outline: none; /* Remove outline on focus */
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Focus shadow effect */
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive styles */
+        @media (max-width: 576px) {
+            header {
+                padding: 20px 0; /* Less padding on mobile */
+            }
+            h1 {
+                font-size: 2rem; /* Smaller header on mobile */
+            }
+            p {
+                font-size: 1rem; /* Smaller paragraph text on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Patrician Hall Booking System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#halls">Halls</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container text-center">
+            <div class="logo">
+                <img src="img/Patics Logo.png" alt="Patrician College Logo"> <!-- Small logo size -->
+            </div>
+            <h1>College Hall Booking System</h1>
+            <p>Welcome to the Patrician Hall Booking System. Choose your hall and make a reservation easily!</p>
+        </div>
+    </header>
+
+    <!-- Halls Section -->
+    <section id="halls" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Available Halls</h2>
+            <div class="row">
+                <!-- Hall 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/hall1.jpg" class="card-img-top" alt="A-Block Conference Hall">
+                        <div class="card-body">
+                            <h5 class="card-title">A-Block Conference Hall</h5>
+                            <p class="card-text">A spacious conference hall located on the 1st floor of A-Block.</p>
+                            <a href="booking.html?hall=A-Block Conf. Hall" class="btn btn-custom">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hall 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/hall2.jpg" class="card-img-top" alt="B-Block OAT">
+                        <div class="card-body">
+                            <h5 class="card-title">B-Block OAT</h5>
+                            <p class="card-text">An open-air theater located on the ground floor of B-Block.</p>
+                            <a href="booking.html?hall=B-Block OAT" class="btn btn-custom">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hall 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/hall3.jpg" class="card-img-top" alt="B-Block Auditorium">
+                        <div class="card-body">
+                            <h5 class="card-title">B-Block Auditorium</h5>
+                            <p class="card-text">A large auditorium on the ground floor of B-Block, perfect for events.</p>
+                            <a href="booking.html?hall=B-Block Auditorium" class="btn btn-custom">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hall 4 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/hall4.jpg" class="card-img-top" alt="C Block Fintan Hall">
+                        <div class="card-body">
+                            <h5 class="card-title">C Block Fintan Hall</h5>
+                            <p class="card-text">A modern hall located on the ground floor of C-Block.</p>
+                            <a href="booking.html?hall=C Block Fintan Hall" class="btn btn-custom">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hall 5 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/hall5.jpg" class="card-img-top" alt="C Block Conference Hall">
+                        <div class="card-body">
+                            <h5 class="card-title">C Block Conference Hall</h5>
+                            <p class="card-text">A well-equipped conference hall in C-Block.</p>
+                            <a href="booking.html?hall=C Block Conference Hall" class="btn btn-custom">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hall 6 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/hall6.jpg" class="card-img-top" alt="Delany Hall">
+                        <div class="card-body">
+                            <h5 class="card-title">Delany Hall</h5>
+                            <p class="card-text">A multi-purpose hall suitable for various events.</p>
+                            <a href="booking.html?hall=Delany Hall" class="btn btn-custom">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hall 7 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/hall7.jpg" class="card-img-top" alt="BMS Hall">
+                        <div class="card-body">
+                            <h5 class="card-title">BMS Hall</h5>
+                            <p class="card-text">Ideal for meetings and workshops.</p>
+                            <a href="booking.html?hall=BMS Hall" class="btn btn-custom">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hall 8 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/hall8.jpg" class="card-img-top" alt="Student Cafeteria">
+                        <div class="card-body">
+                            <h5 class="card-title">Student Cafeteria</h5>
+                            <p class="card-text">A casual setting for small gatherings.</p>
+                            <a href="booking.html?hall=Student Cafeteria" class="btn btn-custom">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hall 9 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/hall9.jpg" class="card-img-top" alt="Library Reference Hall">
+                        <div class="card-body">
+                            <h5 class="card-title">Library Reference Hall</h5>
+                            <p class="card-text">Perfect for study groups and small meetings.</p>
+                            <a href="booking.html?hall=Library Reference Hall" class="btn btn-custom">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hall 10 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/hall10.jpg" class="card-img-top" alt="Board Room">
+                        <div class="card-body">
+                            <h5 class="card-title">Board Room</h5>
+                            <p class="card-text">A formal space for executive meetings.</p>
+                            <a href="booking.html?hall=Board Room" class="btn btn-custom">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hall 11 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/hall11.jpg" class="card-img-top" alt="Computer Lab">
+                        <div class="card-body">
+                            <h5 class="card-title">Computer Lab</h5>
+                            <p class="card-text">Equipped with computers for tech workshops.</p>
+                            <a href="booking.html?hall=Computer Lab" class="btn btn-custom">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 Patrician College of Arts & Science. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:info@patriciancollege.edu">info@patriciancollege.edu</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Venues</title>
+</head>
+<body>
+    <h1>Available Venues</h1>
+    <div id="venuesList"></div>
+
+    <script>
+        async function fetchVenues() {
+            const response = await fetch('/venues');
+            const venues = await response.json();
+            const venuesList = document.getElementById('venuesList');
+            venuesList.innerHTML = '';
+
+            venues.forEach(venue => {
+                const venueItem = document.createElement('div');
+                venueItem.innerText = `${venue.name} (ID: ${venue._id}) - Capacity: ${venue.capacity}`;
+                venuesList.appendChild(venueItem);
+            });
+        }
+
+        // Fetch venues on page load
+        fetchVenues();
+    </script>
+</body>
+</html>

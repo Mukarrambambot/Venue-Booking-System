@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Venue</title>
+</head>
+<body>
+    <h1>Book a Venue</h1>
+    <form id="bookingForm">
+        <label for="venueList">Select Venue:</label>
+        <select id="venueList"></select> <!-- Venue selection dropdown -->
+        
+        <label for="userName">Your Name:</label>
+        <input type="text" id="userName" placeholder="Your Name" required>
+        
+        <label for="userContact">Your Contact:</label>
+        <input type="text" id="userContact" placeholder="Your Contact" required>
+        
+        <label for="bookingDate">Booking Date:</label>
+        <input type="date" id="bookingDate" required>
+        
+        <label for="bookingTime">Booking Time:</label>
+        <input type="time" id="bookingTime" required>
+        
+        <button type="submit">Book Venue</button>
+    </form>
+
+    <div id="message"></div> <!-- To display messages to the user -->
+
+    <script>
+        const loadVenues = async () => {
+            try {
+                const response = await fetch('/venues');
+                const venues = await response.json();
+                const venueList = document.getElementById('venueList');
+                venueList.innerHTML = ''; // Clear the existing list
+                venues.forEach(venue => {
+                    const option = document.createElement('option');
+                    option.value = venue._id; // Assuming _id is the unique identifier
+                    option.textContent = `${venue.name} (Capacity: ${venue.capacity})`;
+                    venueList.appendChild(option);
+                });
+            } catch (error) {
+                console.error('Error loading venues:', error);
+            }
+        };
+
+        const bookVenue = async (bookingData) => {
+            try {
+                const response = await fetch('/api/book-venue', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(bookingData),
+                });
+
+                const data = await response.json();
+                if (data.success) {
+                    document.getElementById('message').innerText = 'Venue booked successfully!';
+                } else {
+                    document.getElementById('message').innerText = 'Error: ' + data.message;
+                }
+            } catch (error) {
+                console.error('Error booking venue:', error);
+                document.getElementById('message').innerText = 'There was an error booking the venue.';
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadVenues(); // Load venues on page load
+
+            document.getElementById('bookingForm').addEventListener('submit', (event) => {
+                event.preventDefault(); // Prevent default form submission
+
+                const venueId = document.getElementById('venueList').value; // Get selected venue ID
+                const userName = document.getElementById('userName').value; // Get user name
+                const userContact = document.getElementById('userContact').value; // Get user contact
+                const bookingDate = document.getElementById('bookingDate').value; // Get booking date
+                const bookingTime = document.getElementById('bookingTime').value; // Get booking time
+
+                // Create booking object to send to backend
+                const bookingData = {
+                    venueId,
+                    userName,
+                    userContact,
+                    bookingDate,
+                    bookingTime,
+                };
+
+                bookVenue(bookingData); // Call the function to book the venue
+            });
+        });
+    </script>
+</body>
+</html>
